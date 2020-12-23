@@ -54,6 +54,9 @@ function closeIf (e) {
 function wait (ms = 0){
     return new Promise(resolve => setTimeout(resolve, ms))
 }
+function getRandomNumber (min = 20, max = 150) {
+    return Math.floor(Math.random()*(max - min) + min)
+}
 
 const textWhoAmI = document.querySelector('[data-type]')
 let eachLetter = textWhoAmI.textContent
@@ -64,7 +67,7 @@ async function draw () {
     index++
     
     if(index <= eachLetter.length){
-    await wait(5)
+    await wait(getRandomNumber)
     draw()
     }
 }
