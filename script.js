@@ -67,10 +67,10 @@ function getValues() {
         email: emailValue.value ,
         message: textValue.value , 
     }
-    inputValue.textContent.value = 'Rafa'    
-    // emailValue.textContent = ""
-    // textValue.textContent = ""
-    console.table(inputValue.textContent)
+    inputValue.value = ''    
+    emailValue.value = ""
+    textValue.value = ""
+    console.table(data)
 }
 
 
