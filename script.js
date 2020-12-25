@@ -49,30 +49,6 @@ function closeIf (e) {
 
 }
 
-// display text
-
-function wait (ms = 0){
-    return new Promise(resolve => setTimeout(resolve, ms))
-}
-function getRandomNumber (min = 20, max = 150) {
-    return Math.floor(Math.random()*(max - min) + min)
-}
-
-const textWhoAmI = document.querySelector('[data-type]')
-let eachLetter = textWhoAmI.textContent
-let index = 1
-
-async function draw () {
-    textWhoAmI.textContent = eachLetter.slice(0,index)
-    index++
-    
-    if(index <= eachLetter.length){
-    await wait(getRandomNumber)
-    draw()
-    }
-}
-console.log(draw())
-
 
 
 
@@ -80,6 +56,23 @@ console.log(draw())
 
 // Criar botao de submit de mensagem
 // pegar as informacoes de nome, email e mensagem e me enviar um email
+const submitBttn = document.querySelector('#submit_button')
+submitBttn.addEventListener('click', getValues)
+function getValues() {
+    let inputValue = document.querySelector('[name="name"]')
+    let emailValue = document.querySelector('[name="email"]')
+    let textValue = document.querySelector('#textarea')
+    let data = {
+        name: inputValue.value ,
+        email: emailValue.value ,
+        message: textValue.value , 
+    }
+    inputValue.textContent.value = 'Rafa'    
+    // emailValue.textContent = ""
+    // textValue.textContent = ""
+    console.table(inputValue.textContent)
+}
+
 
 // Ajustar o modal com os dados das experiencias
 // ajustar os botoes read me para melhorar o layout
