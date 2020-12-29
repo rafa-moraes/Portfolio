@@ -306,6 +306,10 @@ a .fa-github:hover {
     margin-top: 25px;
 }
 
+.ulProjects {
+    color: whitesmoke;
+    z-index: 200;
+}
 
 
 
