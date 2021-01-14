@@ -71,6 +71,7 @@ function getValues() {
     emailValue.value = ""
     textValue.value = ""
     console.table(data)
+    sendEmail(data.name,data.email,data.message)
 }
 
 
@@ -80,7 +81,24 @@ function getValues() {
 // ajustar o site para mobile version (se possivel)
 
 
+function sendEmail(name, email,message){
+    Email.send({
+        Host: "smtp.gmail.com",
+        Username: "rafael.mb2021@gmail.com",
+        Password: "bftzficmvzuazdzi",
+        To: "rafael_m_barros@hotmail.com",
+        From: "rafael.mb2021@gmail.com",
+        Subject: `${name} contacted you`,
+        Body: `Name: ${name} <br/> Email: ${email} <br/> Message:${message}`,
+    }).then(message => alert("E-mail sent successfully"))
 
+
+
+
+
+
+
+}
 
 
 
