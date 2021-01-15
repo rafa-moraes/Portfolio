@@ -281,7 +281,7 @@ a .fa-github:hover {
     background: hsla(0,0%,30%,0.5);
     height: 100vh;
     width: 100vw;
-    /* display: none; */
+    display: none;
     z-index: 2;
 }
 .innerModal {
@@ -293,7 +293,7 @@ a .fa-github:hover {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    /* display: none; */
+    display: none;
     z-index: 12;
 
 }
@@ -327,6 +327,7 @@ background-color: violet;
 }
 .ulProjects h2{
 text-align: center;
+font-size: 30px;
 }
 .ulProjects li{
     list-style: none;

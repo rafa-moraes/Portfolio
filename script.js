@@ -1,6 +1,6 @@
 import {getValues} from './mail.js'
-
-const btn_project = document.querySelector('.read-projects')
+import {projects} from './exp'
+const btn_project = document.querySelector('.readProjects')
 const othersExpBtn = document.querySelector('.readMoreOthersExp')
 const btnX = document.querySelector('#xBtn')
 
@@ -13,17 +13,9 @@ function openModal(e) {
     const dModal = document.querySelector('.divModal')
     const modal = document.querySelector('.modal')
     const innerModal = document.querySelector('.innerModal')
-    if(this.className === 'read-projects'){
-       dModal.innerHTML = `
-       <ul class="ulProjects">
-                   
-       <li><a href="https://github.com/rafa-moraes">To do List</a></li>
-       <li><a href="https://github.com/rafa-moraes">Expense Tracker</a></li>
-       <li><a href="https://github.com/rafa-moraes">Note Taker</a></li>
-       <li><a href="https://github.com/rafa-moraes">Vowel counter</a></li>
-       <li><a href="https://github.com/rafa-moraes">Slider</a></li>
-       <li><a href="https://github.com/rafa-moraes">Memory Game</a></li>
-   </ul>      `     
+    console.log('Works')
+    if(this.className === 'readProjects'){
+       dModal.innerHTML = projects     
     }
     
     modal.style.display = "block"
