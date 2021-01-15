@@ -313,13 +313,30 @@ a .fa-github:hover {
 .ulProjects {
     color: whitesmoke;
     z-index: 200;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     
-    ;
 }
-.ulProjects>a {
+.beginerProjects{
+background-color: tomato;
+margin-left: 5%;
+}
+.intermediateProjects{
+background-color: violet;
+
+}
+.ulProjects h2{
+text-align: center;
+}
+.ulProjects li{
+    list-style: none;
+}
+
+.ulProjects li a {
     text-decoration: none;
     color: whitesmoke;
-    
+    font-size: 25px;
+        
 }
 
 
