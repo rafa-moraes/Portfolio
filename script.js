@@ -35,13 +35,12 @@ function closeModal() {
     document.body.style.background = ''  
 }
 
-
 function closeIf (e) {
     console.log(e.target)
     const modal = document.querySelector('.modal')
     const innerModal = document.querySelector('.innerModal')
     const dModal = document.querySelector('.divModal')
-    if (e.target !== innerModal && e.target !== dModal || e.keyCode === 27) {
+    if (e.target === modal || e.keyCode === 27) {
         modal.style.display = "none" 
         document.body.style.background = ''  
         window.removeEventListener('click',closeIf)

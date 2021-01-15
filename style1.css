@@ -255,15 +255,16 @@ a .fa-github:hover {
 }
 .beginerProjects{
 /* background-color: tomato; */
-margin-left: 5%;
+    margin-left: 10%;
+    line-height: 45px;
 }
 .intermediateProjects{
 /* background-color: violet; */
-margin-left: 5%;
+    margin-left: 10%;   
 }
 .ulProjects h2{
-text-align: center;
-font-size: 30px;
+    text-align: center;
+    font-size: 30px;
 }
 .ulProjects li{
     list-style: none;
@@ -276,19 +277,22 @@ font-size: 30px;
 .generalExperience{
     /* background-color: tomato; */
     margin-left: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
 }
-.generalExperience2{
-    padding-top:47.81px;
-    /* background-color: violet; */
+.generalExperience div li{
+    line-height: 65px;
 }
+
 .ulExperience{
-color: whitesmoke;
-z-index: 200;
-display: grid;
-grid-template-columns: 1fr 1fr;
+    color: whitesmoke;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
 }
 .ulExperience h2{
-text-align: end;
+text-align: center;
 }
 .ulExperience li{
     line-height: 45px;
@@ -298,5 +302,8 @@ text-align: end;
     font-size: 25px;
 
 }
-
+.generalBlockProjects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
