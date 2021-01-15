@@ -18,7 +18,7 @@ export const projects = `<ul class="ulProjects">
 </div>
 <div class="intermediateProjects">
     <h2 >Intermediate Projects</h2>
-    <li>My Website</li>
+    <li><a href="">My Website</a></li>
 </div>    
 </ul>
 `
