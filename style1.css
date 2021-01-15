@@ -143,6 +143,7 @@ button[class *= read] {
     font-size: 15px;
     margin-top: 0px;
     margin-left: 21px;
+    cursor: pointer;
 }
 
 
@@ -214,7 +215,8 @@ button[class *= read] {
     margin-top: 10px;
     margin-left: 268px;
     color: white;
-    background: black;    
+    background: black;   
+    cursor: pointer; 
 }
 
 .social-content{
@@ -279,7 +281,7 @@ a .fa-github:hover {
     background: hsla(0,0%,30%,0.5);
     height: 100vh;
     width: 100vw;
-    display: none;
+    /* display: none; */
     z-index: 2;
 }
 .innerModal {
@@ -291,7 +293,7 @@ a .fa-github:hover {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    display: none;
+    /* display: none; */
     z-index: 12;
 
 }
@@ -311,8 +313,14 @@ a .fa-github:hover {
 .ulProjects {
     color: whitesmoke;
     z-index: 200;
+    
+    ;
 }
-
+.ulProjects>a {
+    text-decoration: none;
+    color: whitesmoke;
+    
+}
 
 
 

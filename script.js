@@ -1,11 +1,11 @@
+import {getValues} from './mail.js'
+
 const btn_project = document.querySelector('.read-projects')
-const btn_irl = document.querySelector('.read-Irl')
-const btn_br = document.querySelector('.read-Br')
+const othersExpBtn = document.querySelector('.readMoreOthersExp')
 const btnX = document.querySelector('#xBtn')
 
 btn_project.addEventListener('click', openModal)
-btn_irl.addEventListener('click', openModal)
-btn_br.addEventListener('click', openModal)
+othersExpBtn.addEventListener('click', openModal)
 
 btnX.addEventListener('click', closeModal)
 
@@ -14,7 +14,16 @@ function openModal(e) {
     const modal = document.querySelector('.modal')
     const innerModal = document.querySelector('.innerModal')
     if(this.className === 'read-projects'){
-       dModal.innerHTML = `       `     
+       dModal.innerHTML = `
+       <ul class="ulProjects">
+                   
+       <li><a href="https://github.com/rafa-moraes">To do List</a></li>
+       <li><a href="https://github.com/rafa-moraes">Expense Tracker</a></li>
+       <li><a href="https://github.com/rafa-moraes">Note Taker</a></li>
+       <li><a href="https://github.com/rafa-moraes">Vowel counter</a></li>
+       <li><a href="https://github.com/rafa-moraes">Slider</a></li>
+       <li><a href="https://github.com/rafa-moraes">Memory Game</a></li>
+   </ul>      `     
     }
     
     modal.style.display = "block"
@@ -50,29 +59,9 @@ function closeIf (e) {
 }
 
 
-
-
-// Pendente
-
-// Criar botao de submit de mensagem
-// pegar as informacoes de nome, email e mensagem e me enviar um email
 const submitBttn = document.querySelector('#submit_button')
 submitBttn.addEventListener('click', getValues)
-function getValues() {
-    let inputValue = document.querySelector('[name="name"]')
-    let emailValue = document.querySelector('[name="email"]')
-    let textValue = document.querySelector('#textarea')
-    let data = {
-        name: inputValue.value ,
-        email: emailValue.value ,
-        message: textValue.value , 
-    }
-    inputValue.value = ''    
-    emailValue.value = ""
-    textValue.value = ""
-    console.table(data)
-    sendEmail(data.name,data.email,data.message)
-}
+
 
 
 // Ajustar o modal com os dados das experiencias
@@ -81,16 +70,6 @@ function getValues() {
 // ajustar o site para mobile version (se possivel)
 
 
-function sendEmail(name, email,message){
-    Email.send({
-        Host: "smtp.gmail.com",
-        Username: "rafael.mb2021@gmail.com",
-        Password: "bftzficmvzuazdzi",
-        To: "rafael_m_barros@hotmail.com",
-        From: "rafael.mb2021@gmail.com",
-        Subject: `${name} contacted you`,
-        Body: `Name: ${name} <br/> Email: ${email} <br/> Message:${message}`,
-    }).then(message => alert("E-mail sent successfully"))
 
 
 
@@ -98,7 +77,8 @@ function sendEmail(name, email,message){
 
 
 
-}
+
+
 
 
 
