@@ -1,5 +1,5 @@
 import {getValues} from './mail.js'
-import {projects} from './exp'
+import {projects,experience} from './exp.js'
 const btn_project = document.querySelector('.readProjects')
 const othersExpBtn = document.querySelector('.readMoreOthersExp')
 const btnX = document.querySelector('#xBtn')
@@ -16,19 +16,18 @@ function openModal(e) {
     console.log('Works')
     if(this.className === 'readProjects'){
        dModal.innerHTML = projects     
+    }else {
+        dModal.innerHTML =  experience
     }
     
     modal.style.display = "block"
     innerModal.style.display = 'block'
     document.body.style.background = 'background: hsla(0,0%,30%,0.5);'
     // body.style.background = '#1E5155'
-    
     e.stopPropagation()
     window.addEventListener('click',closeIf)
     window.addEventListener('keyup',closeIf)
 }
-
-
 
 function closeModal() {
     const modal = document.querySelector('.modal')
@@ -45,9 +44,10 @@ function closeIf (e) {
     if (e.target !== innerModal && e.target !== dModal || e.keyCode === 27) {
         modal.style.display = "none" 
         document.body.style.background = ''  
-        console.log(e)
+        window.removeEventListener('click',closeIf)
+        window.removeEventListener('keyup',closeIf)
     }
-
+    
 }
 
 
