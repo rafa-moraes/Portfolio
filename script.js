@@ -1,5 +1,6 @@
 import {getValues} from './mail.js'
 import {projects,experience} from './exp.js'
+
 const btn_project = document.querySelector('.readProjects')
 const othersExpBtn = document.querySelector('.readMoreOthersExp')
 const btnX = document.querySelector('#xBtn')
