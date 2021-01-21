@@ -28,15 +28,17 @@ body{
 .container1 img {
     height: 50%;
     width: 50%;
-    float: left;
+    
 }
 #myPicture {
-    max-height: 345px;
-    max-width: 310px;
-    min-height: 342px;
-    min-width: 308px;
+    max-height: 15em;
+    max-width: 15em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
     border-radius: 25px;
-    margin: 8% 3% 2% 4%;
+    /* margin: 8% 3% 2% 4%; */
     
 }
 .content1 {
@@ -55,7 +57,7 @@ body{
 .container1 p{
     font-size: 23px;
     text-align: justify;
-    padding: 40px 40px;
+    padding: 20px 20px;
 }
 .container2{   
     /* border: 2px solid rgb(170, 24, 24); */
@@ -333,10 +335,28 @@ text-align: center;
     .container1 p {
         font-size: 15px;
     }
+    #myPicture {
+      
+        
+        
+    }
 }
-
-
-
+@media screen and (max-width: 400px){
+    #myPicture {
+      height: 11em;
+        
+        
+    }
+    .container1 {
+        height: ;
+    }
+    .container2 {
+        display: none;
+    }
+    .container3 {
+        display: none;
+    }
+}
 
 
 
