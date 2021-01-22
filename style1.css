@@ -167,7 +167,7 @@ button[class *= read] {
     margin-left: 20px;
     margin-top:5px;
 }
-#submit_button{
+#submitButton{
     height: 25px;
     margin-top: 10px;
     margin-left: 6.6%;
@@ -335,10 +335,17 @@ text-align: center;
     .container1 p {
         font-size: 15px;
     }
-    #myPicture {
-      
-        
-        
+    .form {
+        display: none;
+    }
+    #submitButton {
+        display: none;
+    }
+    .contact-info {
+        position: relative;
+        right: 50%;
+        transform: translateX(50%);
+        margin-right: 0%;
     }
 }
 @media screen and (max-width: 400px){
@@ -353,8 +360,17 @@ text-align: center;
     .container2 {
         display: none;
     }
-    .container3 {
+    .form {
         display: none;
+    }
+    #submitButton {
+        display: none;
+    }
+    .contact-info {
+        position: relative;
+        right: 50%;
+        transform: translateX(50%);
+        margin-right: 0%;
     }
 }
 
