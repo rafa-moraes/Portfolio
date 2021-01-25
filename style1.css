@@ -352,7 +352,7 @@ text-align: center;
         margin-right: 0%;
     }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     #myPicture {
       height: 11em;
         
