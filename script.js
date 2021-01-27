@@ -4,6 +4,8 @@ import {projects,experience} from './exp.js'
 const btn_project = document.querySelector('.readProjects')
 const othersExpBtn = document.querySelector('.readMoreOthersExp')
 const btnX = document.querySelector('#xBtn')
+const submitBttn = document.querySelector('#submitButton')
+submitBttn.addEventListener('click', getValues)
 
 btn_project.addEventListener('click', openModal)
 othersExpBtn.addEventListener('click', openModal)
@@ -51,9 +53,6 @@ function closeIf (e) {
 }
 
 
-const submitBttn = document.querySelector('#submit_button')
-submitBttn.addEventListener('click', getValues)
-
 
 
 // Ajustar o modal com os dados das experiencias
@@ -61,9 +60,19 @@ submitBttn.addEventListener('click', getValues)
 // inserir o href nos a das midias sociais
 // ajustar o site para mobile version (se possivel)
 
-
-
-
+const bodys = document.body.offsetWidth
+console.dir(bodys)
+if(bodys<500){
+    const paragraphWhoAmI = document.querySelector('.whoAmParagraph')
+    paragraphWhoAmI.innerHTML = `My name is Rafael I'm a brazilian living in Ireland since 2018.</br>
+    I have a bachelor in business administration an MBA in market management.</br> 
+    In 2020 with all the health crises and staying at home and I decided that I should try to study software development since I had a little "taste" when I started learning macros in Excel and used the Visual Basic I tought I would fun.</br>
+    I've always enjoyed this world of coding and programming but I tought that I should have started early, and that it was impossible.</br>                    
+    Even thought I decided to try and since may/2020 I'm studying as a self-taught programmer everything related to HTML, CSS, Javascript,Git, GitHub and now React and even being frustated (many times) when I accomplish something is an amazing feelling and I love it.</br>
+    I've done some projects for beginers and I'm always searching for more knowlodge and new projects to do.</br>
+    My goal is to be able to work in a company as a software developer and improve even more.
+    If you want to see some of my current projects you can access my github page down below or <a href="projects.html" id='clickHere> click here </a>`
+}
 
 
 
