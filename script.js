@@ -71,7 +71,7 @@ if(bodys<500){
     Even thought I decided to try and since may/2020 I'm studying as a self-taught programmer everything related to HTML, CSS, Javascript,Git, GitHub and now React and even being frustated (many times) when I accomplish something is an amazing feelling and I love it.</br>
     I've done some projects for beginers and I'm always searching for more knowlodge and new projects to do.</br>
     My goal is to be able to work in a company as a software developer and improve even more.
-    If you want to see some of my current projects you can access my github page down below or <a href="projects.html" id='clickHere> click here </a>`
+    If you want to see some of my current projects you can access my github page down below or <a href="projects.html" id='clickHere'> click here </a>`
 }
 
 
