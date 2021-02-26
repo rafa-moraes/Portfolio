@@ -315,6 +315,11 @@ text-align: center;
     grid-template-columns: 1fr 1fr;
 }
 
+#clickHere{
+    color:rgb(252, 210, 60);
+    text-decoration: none;
+    font-size: 1.1em;
+}
 
 @media screen and (max-width: 1450px){
     #email_span {
