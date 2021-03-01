@@ -61,7 +61,6 @@ function closeIf (e) {
 // ajustar o site para mobile version (se possivel)
 
 const bodys = document.body.offsetWidth
-console.dir(bodys)
 if(bodys<500){
     const paragraphWhoAmI = document.querySelector('.whoAmParagraph')
     paragraphWhoAmI.innerHTML = `My name is Rafael I'm a brazilian living in Ireland since 2018.</br>
